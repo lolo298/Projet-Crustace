@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 5px;
+}
+
+#mainWrapper {
+    width: 320px;
+    height: 658px;
+    display: flow-root;
+    background: linear-gradient(345.23deg, #498392 -5.2%, rgba(175, 189, 209, 0.85) 52.07%, #498392 112.61%);
+}
+
+header {
+    height: max-content;
+    margin-bottom: 10vw;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.allSpecies {
+    margin-left: 10vw;
+}
+
+#menu {
+    height: 10vw;
+}
+
+#menu~pre {
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
