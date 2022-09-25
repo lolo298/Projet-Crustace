@@ -16,8 +16,8 @@ h1 {
 }
 
 #mainWrapper {
-    width: 320px;
-    height: 658px;
+    width: 100vw;
+    height: 100vh;
     display: flow-root;
     background: linear-gradient(345.23deg, #498392 -5.2%, rgba(175, 189, 209, 0.85) 52.07%, #498392 112.61%);
 }
