@@ -1,0 +1,21 @@
+.info .allSpecies {
+    visibility: hidden;
+}
+
+.info #card h2,
+.info #divide,
+.info #info {
+    display: none;
+}
+
+.info #crustace {
+    transform: translate(0px, -150px);
+    transition: all 1s ease-in-out;
+}
+
+.info #info-content {
+    display: block;
+    background-color: #FFFFFF;
+    height: 60vh;
+    transition: all 1s ease-in-out;
+}
