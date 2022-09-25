@@ -3,9 +3,9 @@
 
 
 @font-face {
-    font-family: 'oooh_babyregular';
+    font-family: 'oooh_baby';
     src: url('ooohbaby-regular-webfont.woff2') format('woff2'),
-         url('ooohbaby-regular-webfont.woff') format('woff');
+        url('ooohbaby-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -15,9 +15,21 @@
 
 
 @font-face {
-    font-family: 'noto_sansregular';
+    font-family: 'noto_sans';
     src: url('notosans-regular-webfont.woff2') format('woff2'),
-         url('notosans-regular-webfont.woff') format('woff');
+        url('notosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garetbook';
+    src: url('garet-book-webfont.woff2') format('woff2'),
+        url('garet-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
