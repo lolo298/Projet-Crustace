@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,6 +31,11 @@ les espèces</pre
         </div>
       </div>
     </div>
-    <script src="./index.js" type="module"></script>
+    <script src="./firebase.js" type="module"></script>
+    <script type="module">
+      import { getData } from "./firebase.js";
+      window.getData = getData;
+    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
