@@ -1,3 +1,4 @@
+spinner(true);
 window.onload = async () => {
   const data = await getAllData();
   const template = document.getElementById("template");
@@ -9,7 +10,9 @@ window.onload = async () => {
     img.alt = element.name;
     let name = clone.getElementById("speciesName");
     name.innerHTML = element.name;
-
+    img.onload = () => {
+      spinner(false);
+    };
     content.appendChild(clone);
   });
 };
