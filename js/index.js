@@ -10,11 +10,15 @@ window.onload = async () => {
     let menuContent = document.getElementById("info-content");
     menuContent.classList.toggle("show");
   });
+  let current = getUrlParams("specie");
 
   let data = await getAllData();
   let rng = Math.floor(Math.random() * data.length);
 
   let defaultData = data[rng];
+  if (current != null) {
+    defaultData = data[current];
+  }
   let image = document.getElementById("crustace");
   let name = document.getElementById("card").querySelector("h2");
   if (rng == 7) {
