@@ -13,6 +13,14 @@ window.onload = async () => {
     let menuContent = document.getElementById("info-content");
     menuContent.classList.toggle("show");
   });
+  let close = document.getElementById("close");
+  close.addEventListener("click", function () {
+    let menu = document.getElementById("mainWrapper");
+    menu.classList.remove("info");
+    let menuContent = document.getElementById("info-content");
+    menuContent.classList.toggle("show");
+    menuContent.classList.toggle("hide");
+  });
   let current = getUrlParams("specie");
 
   let data = await getAllData();

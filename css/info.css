@@ -46,3 +46,9 @@
 .info-val {
     width: max-content;
 }
+
+#info.menuInfo {
+    position: relative;
+    bottom: 11vh;
+    left: 67vw;
+}
