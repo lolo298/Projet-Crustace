@@ -30,10 +30,9 @@ window.onload = async () => {
   taille.innerHTML = defaultData.texts.taille;
   qte.innerHTML = defaultData.texts.nombre;
   periode.innerHTML = defaultData.texts.periode;
-};
 
-async function getAllData() {
-  let response = await getData();
-  let data = await response;
-  return data;
-}
+  let menu = document.getElementById("menu");
+  menu.addEventListener("click", function () {
+    window.location.href = "menu.html?specie=" + rng;
+  });
+};

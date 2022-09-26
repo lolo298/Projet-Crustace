@@ -23,8 +23,8 @@
       href="./assets/icon/favicon-16x16.png"
     />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="info.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/info.css" />
   </head>
 
   <body>
@@ -66,12 +66,12 @@ les espèces</pre
         </div>
       </div>
     </div>
-
-    <script src="./firebase.js" type="module"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/firebase.js" type="module"></script>
     <script type="module">
-      import { getData } from "./firebase.js";
+      import { getData } from "./js/firebase.js";
       window.getData = getData;
     </script>
-    <script src="./app.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
