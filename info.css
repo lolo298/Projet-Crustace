@@ -39,6 +39,7 @@
 .infosPeche {
     margin: 10px 5px;
     display: flex;
+    font-size: 15px;
 }
 
 .infosPeche>p,
