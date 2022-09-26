@@ -68,6 +68,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 90vw;
+    transform: translate(0px, 0px);
+    transition: transform 1s ease-in-out;
 }
 
 #card>div {
@@ -111,9 +113,8 @@ h2 {
     color: black;
     border-radius: 20px 20px 0 0;
     width: 100vw;
-    height: 70vh;
-    animation: slideDown 2s cubic-bezier(.47, 0, .86, .61) 0s 1;
-    max-height: 0px;
+    height: 0;
+    transition: height 1s ease-in-out;
     position: absolute;
     bottom: -100px;
 }
@@ -121,13 +122,14 @@ h2 {
 #info-content.show {
     display: block;
     background-color: #FFFFFF;
+    height: 70vh;
 }
 
 #info-content.hide {
     display: block;
     background-color: #FFFFFF;
-    max-height: 1000px;
-    animation: slideDown 2s cubic-bezier(.47, 0, .86, .61) 0s 1 reverse;
+    height: 0;
+
 }
 
 @keyframes slideDown {

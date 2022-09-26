@@ -12,6 +12,7 @@ window.onload = async () => {
     menu.classList.add("info");
     let menuContent = document.getElementById("info-content");
     menuContent.classList.toggle("show");
+    menuContent.classList.toggle("hide");
   });
   let close = document.getElementById("close");
   close.addEventListener("click", function () {
