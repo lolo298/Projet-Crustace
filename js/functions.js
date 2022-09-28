@@ -15,10 +15,10 @@ function spinner(state) {
   var path = window.location.pathname;
   let main;
 
-  if (path == "/" || path == "/index.html") {
-    main = document.querySelector(".content");
-  } else if (path == "/menu.html") {
+  if (path.includes("/menu.html")) {
     main = document.getElementById("list");
+  } else {
+    main = document.querySelector(".content");
   }
   if (state) {
     main.style.visibility = "hidden";
