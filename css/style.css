@@ -159,7 +159,7 @@ h2 {
     backdrop-filter: blur(22.5px);
     border-radius: 10px;
     width: 80vw;
-    height: 20vh;
+    height: max-content;
     display: flex;
     margin: 20px 0px;
 }
@@ -230,9 +230,21 @@ h2 {
     }
 }
 
+ul {
+    padding: 0;
+}
+
 #acceuil {
     margin-left: 10vw;
     align-self: baseline;
+    display: flex;
+}
+
+#searchBar {
+    height: 3vh;
+    align-self: center;
+    margin-left: 10vw;
+    margin-bottom: 17vw;
 }
 
 #infoHead {

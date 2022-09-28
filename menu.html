@@ -3,8 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-control" content="public" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icon/favicon-16x16.png"
+    />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/info.css" />
@@ -27,17 +45,20 @@
           ></circle>
         </svg>
         <div id="acceuil">
-          <img src="./assets/icon/home.svg" alt="home" id="menu" />
-          <pre>
+          <div>
+            <img src="./assets/icon/home.svg" alt="home" id="menu" />
+            <pre>
 Retour a
 l'acceuil</pre
-          >
+            >
+          </div>
+          <input type="text" id="searchBar" onkeyup="search()" />
         </div>
-        <div id="list"></div>
+        <ul id="list"></ul>
       </div>
     </div>
     <template id="template">
-      <div id="listContent">
+      <li id="listContent">
         <img
           id="info"
           class="menuInfo"
@@ -48,7 +69,7 @@ l'acceuil</pre
           <h2 id="speciesName"></h2>
           <img src="" alt="" id="speciesImg" />
         </div>
-      </div>
+      </li>
     </template>
     <script src="./js/functions.js"></script>
     <script src="./js/firebase.js" type="module"></script>

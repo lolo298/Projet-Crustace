@@ -28,3 +28,18 @@ function spinner(state) {
     spinner.style.display = "none";
   }
 }
+
+function search() {
+  let name, value;
+  let input = document.getElementById("searchBar").value.toUpperCase();
+  let list = document.getElementById("list").querySelectorAll("li");
+  list.forEach((element) => {
+    name = element.querySelector("h2");
+    value = name.innerHTML;
+    if (value.toUpperCase().indexOf(input) > -1) {
+      element.style.display = "";
+    } else {
+      element.style.display = "none";
+    }
+  });
+}
