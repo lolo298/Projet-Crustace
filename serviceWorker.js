@@ -2,7 +2,6 @@ const crustace = "Projet-Crustace";
 const assets = [
   "/",
   "/css/",
-  "/js/",
   "/assets/fonts/",
   "/assets/icon/",
   "/assets/img/",
