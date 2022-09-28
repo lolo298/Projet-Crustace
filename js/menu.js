@@ -18,7 +18,7 @@ window.onload = async () => {
     info.addEventListener("click", function () {
       let path = window.location.pathname;
       path = path.replace("menu.html", "");
-      window.location.href = "/?specie=" + i;
+      window.location.href = path + "?specie=" + i;
     });
     content.appendChild(clone);
   }
