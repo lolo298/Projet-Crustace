@@ -1,3 +1,9 @@
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./serviceWorker.js").then(function () {
+    console.log("Service Worker Registered");
+  });
+}
+
 spinner(true);
 window.onload = async () => {
   let divider = document.getElementById("divide");

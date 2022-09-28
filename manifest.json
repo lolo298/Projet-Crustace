@@ -1,0 +1,19 @@
+{
+    "name": "Projet Crustace",
+    "short_name": "Crustace",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#498392",
+    "theme_color": "#498392",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/assets/icon/favicon-16x16.png",
+        "type": "image/png", "sizes": "16x16"
+      },
+      {
+        "src": "/assets/icon/favicon-32x32.png",
+        "type": "image/png", "sizes": "32x32"
+      }
+    ]
+  }
