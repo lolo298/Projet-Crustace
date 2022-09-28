@@ -20,6 +20,8 @@ window.onload = async () => {
     }
     let info = clone.getElementById("info");
     info.addEventListener("click", function () {
+      let path = window.location.pathname;
+      path = path.replace("menu.html", "");
       window.location.href = "/?specie=" + i;
     });
     content.appendChild(clone);
@@ -27,6 +29,8 @@ window.onload = async () => {
   let menu = document.getElementById("menu");
   let id = getUrlParams("specie");
   menu.addEventListener("click", function () {
-    window.location.href = "/?specie=" + id;
+    let path = window.location.pathname;
+    path = path.replace("menu.html", "");
+    window.location.href = path + "?specie=" + id;
   });
 };
