@@ -15,7 +15,7 @@ function spinner(state) {
   var path = window.location.pathname;
   let main;
 
-  if (path == "/") {
+  if (path == "/" || path == "/index.html") {
     main = document.querySelector(".content");
   } else if (path == "/menu.html") {
     main = document.getElementById("list");

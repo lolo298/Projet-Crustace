@@ -54,4 +54,28 @@ window.onload = async () => {
   menu.addEventListener("click", function () {
     window.location.href = "menu.html?specie=" + rng;
   });
+  let next = document.getElementById("next");
+  next.addEventListener("click", function () {
+    rng++;
+    if (rng >= data.length) {
+      rng = 0;
+    }
+    defaultData = data[rng];
+    console.log("🚀 ~ file: index.js ~ line 64 ~ defaultData", defaultData);
+    name = document.getElementById("name");
+    name.innerHTML = defaultData.name;
+    name = document.getElementById("card").querySelector("h2");
+    name.innerHTML = defaultData.name;
+    image.src = defaultData.image;
+    taille.innerHTML = defaultData.texts.taille;
+    qte.innerHTML = defaultData.texts.nombre;
+    periode.innerHTML = defaultData.texts.periode;
+    if (rng == 7) {
+      name.style.transform = "translate(-70px, -100px)";
+      image.style.transform = "translate(0px, 0px)";
+    } else {
+      name.style.transform = null;
+      image.style.transform = null;
+    }
+  });
 };

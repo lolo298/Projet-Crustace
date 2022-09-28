@@ -246,3 +246,26 @@ h2 {
     width: 5vw;
 
 }
+
+footer {
+    display: flex;
+}
+
+footer>h2 {
+    align-self: center;
+}
+
+footer button {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: 2vh;
+    background-color: #575E71;
+    border: 0;
+    font-family: 'noto_sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 150%;
+    line-height: 20px;
+    color: white;
+}
