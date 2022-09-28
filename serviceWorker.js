@@ -1,11 +1,5 @@
 const crustace = "Projet-Crustace";
-const assets = [
-  "/",
-  "/css/",
-  "/assets/fonts/",
-  "/assets/icon/",
-  "/assets/img/",
-];
+const assets = ["/"];
 
 self.addEventListener("install", (installEvent) => {
   installEvent.waitUntil(
@@ -15,10 +9,10 @@ self.addEventListener("install", (installEvent) => {
   );
 });
 
-self.addEventListener("fetch", (fetchEvent) => {
-  fetchEvent.respondWith(
-    caches.match(fetchEvent.request).then((res) => {
-      return res || fetch(fetchEvent.request);
+self.addEventListener("fetch", function (event) {
+  event.respondWith(
+    fetch(event.request).then(function (networkResponse) {
+      return networkResponse;
     })
   );
 });
