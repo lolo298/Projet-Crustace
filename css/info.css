@@ -49,6 +49,6 @@
 
 #info.menuInfo {
     position: relative;
-    bottom: 11vh;
-    left: 67vw;
+    top: -2vh;
+    left: -3vh;
 }

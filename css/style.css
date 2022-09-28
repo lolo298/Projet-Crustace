@@ -161,6 +161,7 @@ h2 {
     width: 80vw;
     height: max-content;
     display: flex;
+    flex-direction: column;
     margin: 20px 0px;
 }
 
@@ -175,7 +176,6 @@ h2 {
     margin-left: 2vw;
     z-index: 2;
     width: 60vw;
-    transform: translate(-30px, 0px);
 }
 
 #speciesImg {

@@ -14,10 +14,6 @@ window.onload = async () => {
     img.onload = () => {
       spinner(false);
     };
-    if (i == 3 || i == 7 || i == 13) {
-      let info = clone.getElementById("info");
-      info.style.bottom = "17vh";
-    }
     let info = clone.getElementById("info");
     info.addEventListener("click", function () {
       let path = window.location.pathname;
