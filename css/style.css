@@ -32,9 +32,8 @@ header {
     margin-top: 3vh;
     height: max-content;
     margin-bottom: 10vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 3vw;
+    text-align: center;
 }
 
 h1,
@@ -282,13 +281,6 @@ ul {
     margin-left: 10vw;
 }
 
-#filters {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 27vw;
-}
-
 #infoHead {
     display: flex;
     flex-direction: row;
@@ -324,4 +316,8 @@ footer button {
     font-size: 5vw;
     line-height: 20px;
     color: white;
+}
+
+#filters {
+    width: 28vw;
 }
