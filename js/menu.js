@@ -29,4 +29,26 @@ window.onload = async () => {
     path = path.replace("menu.html", "");
     window.location.href = path + "?specie=" + id;
   });
+
+  let filter = document.getElementById("filters").querySelectorAll("input");
+  console.log("🚀 ~ file: menu.js ~ line 34 ~ window.onload= ~ filter", filter);
+  for (let i = 0; i < filter.length; i++) {
+    let id = i++;
+    console.log("🚀 ~ file: menu.js ~ line 37 ~ window.onload= ~ i", i);
+    console.log("🚀 ~ file: menu.js ~ line 37 ~ window.onload= ~ id", id);
+
+    let next;
+
+    filter[i].addEventListener("click", function () {
+      if (id >= filter.length) {
+        next = filter[0];
+        console.log("reset filter", 0);
+      } else {
+        next = filter[id];
+        console.log("next filter", id);
+      }
+
+      console.log("🚀 ~ file: menu.js ~ line 38 ~ next", next);
+    });
+  }
 };

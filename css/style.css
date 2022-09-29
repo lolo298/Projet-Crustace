@@ -32,9 +32,8 @@ header {
     margin-top: 3vh;
     height: max-content;
     margin-bottom: 10vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 3vw;
+    text-align: center;
 }
 
 h1,
@@ -280,13 +279,6 @@ ul {
     width: 40vw;
     height: 2vh;
     margin-left: 10vw;
-}
-
-#filters {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 27vw;
 }
 
 #infoHead {

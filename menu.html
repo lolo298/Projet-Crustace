@@ -40,7 +40,21 @@ Retour a
 l'acceuil</pre
             >
           </div>
-          <input type="text" id="searchBar" onkeyup="search()" />
+          <div id="search">
+            <input type="text" id="searchBar" onkeyup="search()" />
+            <form id="filters">
+              <input type="checkbox" name="Filter" id="coqueFilter" value="0" />
+              <label for="Coque">Coques</label>
+
+              <input
+                type="checkbox"
+                name="Filter"
+                id="crustaceFilter"
+                value="1"
+              />
+              <label for="Crustace">Crustacés</label>
+            </form>
+          </div>
         </div>
         <ul id="list"></ul>
       </div>
