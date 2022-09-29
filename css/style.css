@@ -181,7 +181,7 @@ h2 {
 #speciesImg {
     height: 13vh;
     transform: translate(-20px, 0px);
-    position: absolute;
+    position: relative;
     right: 0px;
 
 }
