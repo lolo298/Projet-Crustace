@@ -267,6 +267,8 @@ ul {
 
 footer {
     display: flex;
+    position: relative;
+    bottom: 7vh;
 }
 
 footer>h2 {
