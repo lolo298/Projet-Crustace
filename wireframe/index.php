@@ -40,10 +40,7 @@
         <img src="../assets/icon/ampoule.png">
         <p>Aide</p>
     </div>
-    <?php
-    for($i = 0; $i <4; $i++){
-        echo("
-        <a href='info.html'>
+            <a href='info.html'>
             <div class='card'>
                 <div class='top'>
                     <div class='name'>
@@ -53,10 +50,40 @@
                 </div>
                 <div class='image'></div>
             </div>
-        </a>"
-        );
-    }
-    ?>
+        </a>
+            <a href='info.html'>
+            <div class='card'>
+                <div class='top'>
+                    <div class='name'>
+                        <p>Nom de l'espèce</p>
+                    </div>
+                    <img src='../assets/icon/info.svg'>
+                </div>
+                <div class='image'></div>
+            </div>
+        </a>
+            <a href='info.html'>
+            <div class='card'>
+                <div class='top'>
+                    <div class='name'>
+                        <p>Nom de l'espèce</p>
+                    </div>
+                    <img src='../assets/icon/info.svg'>
+                </div>
+                <div class='image'></div>
+            </div>
+        </a>
+            <a href='info.html'>
+            <div class='card'>
+                <div class='top'>
+                    <div class='name'>
+                        <p>Nom de l'espèce</p>
+                    </div>
+                    <img src='../assets/icon/info.svg'>
+                </div>
+                <div class='image'></div>
+            </div>
+        </a>
     <footer>
         <div class="search">
             <img src='../assets/icon/loupe.png'>
