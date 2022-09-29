@@ -16,6 +16,10 @@ h1 {
     margin-bottom: 5px;
 }
 
+#logo {
+    width: 15vw;
+}
+
 #mainWrapper {
     width: 100vw;
     height: 100vh;
@@ -27,6 +31,9 @@ h1 {
 header {
     height: max-content;
     margin-bottom: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1,
