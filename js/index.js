@@ -55,6 +55,8 @@ window.onload = async () => {
   if (defaultData.texts.marquage == true) {
     let warn = document.getElementById("warn");
     warn.style.display = "flex";
+    let text = document.getElementById("warn").querySelector("p");
+    text.innerHTML = "Espèce à marquer";
     let tmp = document.getElementById("periode").parentElement;
     warn.before(tmp);
   } else if (defaultData.texts.qteLoc != undefined) {
@@ -100,6 +102,8 @@ window.onload = async () => {
     if (defaultData.texts.marquage == true) {
       let warn = document.getElementById("warn");
       warn.style.display = "flex";
+      let text = document.getElementById("warn").querySelector("p");
+      text.innerHTML = "Espèce à marquer";
       let tmp = document.getElementById("periode").parentElement;
       warn.before(tmp);
     } else if (defaultData.texts.qteLoc != undefined) {
@@ -124,11 +128,13 @@ window.onload = async () => {
     periode.innerHTML = defaultData.texts.periode;
 
     if (rng == 7) {
-      name.style.transform = "translate(-70px, -100px)";
+      name.style.transform = "translate(-30px, -90px)";
+      name.style.width = "80vw";
       image.style.transform = "translate(0px, 0px)";
     } else {
       name.style.transform = null;
       image.style.transform = null;
+      name.style.width = null;
     }
   });
 };

@@ -96,7 +96,9 @@ h2 {
 
 #card h2 {
     z-index: 2;
-    transform: translate(-100px, -110px);
+    transform: translate(-80px, -80px);
+    text-align: left;
+    word-wrap: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 54px;
@@ -263,8 +265,20 @@ ul {
 #searchBar {
     height: 3vh;
     align-self: center;
+    width: 40vw;
+}
+
+#search {
+    width: 40vw;
+    height: 2vh;
     margin-left: 10vw;
-    margin-bottom: 17vw;
+}
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 27vw;
 }
 
 #infoHead {
