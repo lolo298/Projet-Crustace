@@ -1,24 +1,28 @@
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("./serviceWorker.js").then(function () {
-    console.log("Service Worker Registered");
-  });
-}
-
 spinner(true);
 window.onload = async () => {
+  let check = false;
   let divider = document.getElementById("divide");
   let element = document.getElementById("card").querySelector("div");
   divider.style.width = element.offsetWidth + 40 - 8 + "px";
   let path = window.location.pathname;
   let page = path.split("/").pop();
 
-  let info = document.getElementById("info");
+  let info = document.getElementById("card");
   info.addEventListener("click", function () {
-    let menu = document.getElementById("mainWrapper");
-    menu.classList.add("info");
-    let menuContent = document.getElementById("info-content");
-    menuContent.classList.toggle("show");
-    menuContent.classList.toggle("hide");
+    check = !check;
+    if (!check) {
+      let menu = document.getElementById("mainWrapper");
+      menu.classList.remove("info");
+      let menuContent = document.getElementById("info-content");
+      menuContent.classList.toggle("show");
+      menuContent.classList.toggle("hide");
+    } else {
+      let menu = document.getElementById("mainWrapper");
+      menu.classList.add("info");
+      let menuContent = document.getElementById("info-content");
+      menuContent.classList.toggle("show");
+      menuContent.classList.toggle("hide");
+    }
   });
   let close = document.getElementById("close");
   close.addEventListener("click", function () {
