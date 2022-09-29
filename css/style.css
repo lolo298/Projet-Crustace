@@ -84,6 +84,7 @@ h2 {
 
 #crustace {
     transform: translate(-50px, 0px);
+    width: 60vw;
 }
 
 #divide {
@@ -100,13 +101,12 @@ h2 {
     text-align: left;
     word-wrap: normal;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 10vw;
     line-height: 54px;
 }
 
 #info {
-    width: 30px;
-    height: 30px;
+    width: 8vw;
     filter: invert(100%);
     align-self: flex-end;
     z-index: 50;
@@ -313,7 +313,7 @@ footer button {
     font-family: 'noto_sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 150%;
+    font-size: 5vw;
     line-height: 20px;
     color: white;
 }
