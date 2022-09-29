@@ -123,6 +123,18 @@ h2 {
     transition: height 1s ease-in-out;
     position: absolute;
     bottom: -100px;
+    z-index: 2;
+}
+
+#warn {
+    display: none;
+    color: red;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+#warn>img {
+    width: 50px;
 }
 
 #info-content.show {
