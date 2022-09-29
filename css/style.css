@@ -29,6 +29,7 @@ h1 {
 }
 
 header {
+    margin-top: 3vh;
     height: max-content;
     margin-bottom: 10vw;
     display: flex;
