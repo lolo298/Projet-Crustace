@@ -14,11 +14,11 @@ window.onload = async () => {
     img.onload = () => {
       spinner(false);
     };
-    let info = clone.getElementById("info");
+    let info = clone.getElementById("listContent");
     info.addEventListener("click", function () {
       let path = window.location.pathname;
       path = path.replace("menu.html", "");
-      window.location.href = path + "?specie=" + i;
+      window.location.href = path + "?specie=" + i + "&state=info";
     });
     content.appendChild(clone);
   }

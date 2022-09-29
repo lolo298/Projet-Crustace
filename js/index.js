@@ -7,6 +7,15 @@ window.onload = async () => {
   let path = window.location.pathname;
   let page = path.split("/").pop();
 
+  if (getUrlParams("state") == "info") {
+    check = !check;
+    let menu = document.getElementById("mainWrapper");
+    menu.classList.add("info");
+    let menuContent = document.getElementById("info-content");
+    menuContent.classList.toggle("show");
+    menuContent.classList.toggle("hide");
+  }
+
   let info = document.getElementById("card");
   info.addEventListener("click", function () {
     check = !check;
@@ -71,7 +80,6 @@ window.onload = async () => {
       rng = 0;
     }
     defaultData = data[rng];
-    console.log("🚀 ~ file: index.js ~ line 64 ~ defaultData", defaultData);
     name = document.getElementById("name");
     name.innerHTML = defaultData.name;
     name = document.getElementById("card").querySelector("h2");
