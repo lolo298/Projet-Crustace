@@ -13,6 +13,16 @@
     transition: all 1s ease-in-out;
 }
 
+.info .allSpecies {
+    transform: translate(0px, -250px);
+    transition: all 1s ease-in-out;
+}
+
+.content {
+    transform: translate(0px, 0px);
+    transition: transform 1s ease-in-out;
+}
+
 .info-val {
     box-shadow: 3px 4px 20px -4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;

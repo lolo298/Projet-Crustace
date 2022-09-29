@@ -72,6 +72,12 @@ h2 {
     transition: transform 1s ease-in-out;
 }
 
+#content,
+.allSpecies {
+    transform: translate(0px, 0px);
+    transition: transform 1s ease-in-out;
+}
+
 #card>div {
     transform: translate(50px, 0px);
 }
@@ -117,6 +123,18 @@ h2 {
     transition: height 1s ease-in-out;
     position: absolute;
     bottom: -100px;
+    z-index: 2;
+}
+
+#warn {
+    display: none;
+    color: red;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+#warn>img {
+    width: 50px;
 }
 
 #info-content.show {
@@ -159,10 +177,11 @@ h2 {
     backdrop-filter: blur(22.5px);
     border-radius: 10px;
     width: 80vw;
-    height: max-content;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     margin: 20px 0px;
+    flex-shrink: 0;
 }
 
 #speciesName {
@@ -188,6 +207,7 @@ h2 {
 
 #listCard {
     display: flex;
+    overflow: hidden;
 }
 
 .spinner {
@@ -261,6 +281,8 @@ ul {
 
 footer {
     display: flex;
+    position: relative;
+    bottom: 7vh;
 }
 
 footer>h2 {
