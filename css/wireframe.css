@@ -18,6 +18,8 @@ a {
 }
 
 header {
+    position: sticky;
+    top: 0px;
     width: 360px;
     height: 109px;
     background-color: #F3F3F3;
