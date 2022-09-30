@@ -30,25 +30,44 @@ window.onload = async () => {
     window.location.href = path + "?specie=" + id;
   });
 
-  let filter = document.getElementById("filters").querySelectorAll("input");
-  console.log("🚀 ~ file: menu.js ~ line 34 ~ window.onload= ~ filter", filter);
-  for (let i = 0; i < filter.length; i++) {
-    let id = i++;
-    console.log("🚀 ~ file: menu.js ~ line 37 ~ window.onload= ~ i", i);
-    console.log("🚀 ~ file: menu.js ~ line 37 ~ window.onload= ~ id", id);
+  let filters = document.getElementById("filters").querySelectorAll("input");
 
-    let next;
-
-    filter[i].addEventListener("click", function () {
-      if (id >= filter.length) {
-        next = filter[0];
-        console.log("reset filter", 0);
+  filters.forEach((element) => {
+    element.addEventListener("click", async function () {
+      if (!element.checked) {
+        element.checked = false;
+        let list = document.querySelectorAll("#listContent");
+        list.forEach((element) => {
+          element.style.display = "flex";
+        });
       } else {
-        next = filter[id];
-        console.log("next filter", id);
+        filters.forEach((others) => {
+          others.checked = false;
+        });
+        element.checked = true;
+        let theme = element.value;
+        let list = document.querySelectorAll("#listContent");
+        let themes = await fetch("./assets/theme.json").then((res) =>
+          res.json()
+        );
+        if (theme == 0) {
+          list.forEach((element, key) => {
+            if (!themes.Coques.includes(key)) {
+              element.style.display = "none";
+            } else {
+              element.style.display = "flex";
+            }
+          });
+        } else if (theme == 1) {
+          list.forEach((element, key) => {
+            if (!themes.Crustace.includes(key)) {
+              element.style.display = "none";
+            } else {
+              element.style.display = "flex";
+            }
+          });
+        }
       }
-
-      console.log("🚀 ~ file: menu.js ~ line 38 ~ next", next);
     });
-  }
+  });
 };
