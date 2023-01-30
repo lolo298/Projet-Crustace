@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <script type="text/javascript">
+      if (document.location.host == "lorenzoa.dev") {
+        document.write("<base href='https://" + document.location.host + "/pap/' />");
+      } else {
+        document.write("<base href='http://" + document.location.host + "' />");
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Cache-control" content="public" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projet crustace</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/icon/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/info.css" />
@@ -24,14 +27,7 @@
         <h2>Guide des espèces</h2>
       </header>
       <svg class="spinner" viewBox="0 0 50 50">
-        <circle
-          class="path"
-          cx="25"
-          cy="25"
-          r="20"
-          fill="none"
-          stroke-width="5"
-        ></circle>
+        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
       </svg>
       <div class="content">
         <div class="allSpecies">

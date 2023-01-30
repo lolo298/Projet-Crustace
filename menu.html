@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/javascript">
+      if (document.location.host == "lorenzoa.dev") {
+        document.write("<base href='https://" + document.location.host + "/pap/' />");
+      } else {
+        document.write("<base href='http://" + document.location.host + "' />");
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Cache-control" content="public" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projet crustace</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/icon/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/info.css" />
@@ -23,14 +26,7 @@
       </header>
       <div class="content">
         <svg class="spinner" viewBox="0 0 50 50">
-          <circle
-            class="path"
-            cx="25"
-            cy="25"
-            r="20"
-            fill="none"
-            stroke-width="5"
-          ></circle>
+          <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
         </svg>
         <div id="acceuil">
           <div>
@@ -46,12 +42,7 @@ l'acceuil</pre
               <input type="checkbox" name="Filter" id="coqueFilter" value="0" />
               <label for="Coque">Coquillages</label>
 
-              <input
-                type="checkbox"
-                name="Filter"
-                id="crustaceFilter"
-                value="1"
-              />
+              <input type="checkbox" name="Filter" id="crustaceFilter" value="1" />
               <label for="Crustace">Crustacés</label>
             </form>
           </div>
@@ -61,12 +52,7 @@ l'acceuil</pre
     </div>
     <template id="template">
       <li id="listContent">
-        <img
-          id="info"
-          class="menuInfo"
-          src="./assets/icon/info.svg"
-          alt="Info"
-        />
+        <img id="info" class="menuInfo" src="./assets/icon/info.svg" alt="Info" />
         <div id="listCard">
           <h2 id="speciesName"></h2>
           <img src="" alt="" id="speciesImg" />
