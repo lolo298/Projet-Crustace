@@ -129,7 +129,7 @@ window.onload = async () => {
 
     if (rng == 7) {
       name.style.transform = "translate(-30px, -90px)";
-      name.style.width = "80vw";
+      name.style.width = "80%";
       image.style.transform = "translate(0px, 0px)";
     } else {
       name.style.transform = null;
